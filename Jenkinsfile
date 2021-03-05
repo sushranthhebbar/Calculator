@@ -1,4 +1,7 @@
 pipeline{
+    agent{
+    
+    }
     stages{
         stage('Compile'){
             steps{
