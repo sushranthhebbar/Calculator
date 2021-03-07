@@ -1,5 +1,5 @@
 set -x
 
-echo "3.14152.7182" | sudo -S ./package.sh
+./package.sh
 
 set +x
