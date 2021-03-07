@@ -1,8 +1,6 @@
 pipeline{
     agent any
-    environment{
-	    PASSWORD = credentials('system_password')
-	}
+    def dockerImage
     stages{
         stage('Compile'){
             steps{
@@ -14,10 +12,19 @@ pipeline{
                 sh 'mvn test'
             }
         }
-        stage('Package'){
+        stage('Build Image'){
             steps{
                 //sh 'echo Hello'
-                sh './credentials.sh'
+                dockerImage = docker.build("sushranthhebbar/calculator")
+            }
+        }
+        stage('Push Image'){
+            steps{
+                script{
+                    docker.withRegistry('https://registry.hub.docker.com/', 'system_password'){
+                        dockerImage.push("${env.BUILD_NUMBER}") 
+                        dockerImage.push("latest") 
+                    }      
             }
         }
         stage('Deliver'){
