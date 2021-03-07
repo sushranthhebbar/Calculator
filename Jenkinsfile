@@ -1,7 +1,7 @@
+def dockerImage
 pipeline{
     agent any
     stages{
-        def dockerImage
         stage('Compile'){
             steps{
                 sh 'mvn compile'
