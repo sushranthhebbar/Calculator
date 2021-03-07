@@ -14,8 +14,10 @@ pipeline{
         }
         stage('Build Image'){
             steps{
+                script{
+                    IMAGE = docker.build("sushranthhebbar/calculator")
+                }
                 //sh 'echo Hello'
-                IMAGE = docker.build("sushranthhebbar/calculator")
             }
         }
         stage('Push Image'){
