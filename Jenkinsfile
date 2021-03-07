@@ -1,4 +1,4 @@
-def dockerImage
+def IMAGE
 pipeline{
     agent any
     stages{
@@ -15,15 +15,15 @@ pipeline{
         stage('Build Image'){
             steps{
                 //sh 'echo Hello'
-                dockerImage = docker.build("sushranthhebbar/calculator")
+                IMAGE = docker.build("sushranthhebbar/calculator")
             }
         }
         stage('Push Image'){
             steps{
                 script{
                     docker.withRegistry('https://registry.hub.docker.com/', 'system_password'){
-                        dockerImage.push("${env.BUILD_NUMBER}") 
-                        dockerImage.push("latest") 
+                        IMAGE.push("${env.BUILD_NUMBER}") 
+                        IMAGE.push("latest") 
                     }      
                 }
             }
