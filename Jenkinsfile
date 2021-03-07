@@ -16,7 +16,7 @@ pipeline{
         }
         stage('Package'){
             steps{
-                sh 'echo $PASSWORD | sudo -S ./package.sh'
+                sh 'echo $PASSWORD_PSW | sudo ./package.sh'
             }
         }
         stage('Deliver'){
