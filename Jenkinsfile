@@ -1,5 +1,8 @@
 pipeline{
     agent any
+    environment{
+	    PASSWORD = credentials('system_password')
+	}
     stages{
         stage('Compile'){
             steps{
@@ -13,9 +16,7 @@ pipeline{
         }
         stage('Package'){
             steps{
-                sh 'sudo docker login'
-                sh 'sudo docker build -t sushranthhebbar/calculator:latest .'
-                sh 'sudo docker push sushranthhebbar/calculator:latest'
+                sh 'echo $PASSWORD | sudo -S ./package.sh'
             }
         }
         stage('Deliver'){
