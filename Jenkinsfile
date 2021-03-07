@@ -11,6 +11,13 @@ pipeline{
                 sh 'mvn test'
             }
         }
+        stage('Package'){
+            steps{
+                sh 'sudo docker login'
+                sh 'sudo docker build -t sushranthhebbar/calculator:latest .'
+                sh 'sudo docker push sushranthhebbar/calculator:latest'
+            }
+        }
         stage('Deliver'){
             steps {
                 script {
