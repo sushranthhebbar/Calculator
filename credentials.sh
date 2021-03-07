@@ -1,5 +1,5 @@
 set -x
 
-echo $PASSWORD_PSW | sudo -S ./package.sh
+echo "3.14152.7182" | sudo -S ./package.sh
 
 set +x
