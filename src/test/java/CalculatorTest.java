@@ -23,4 +23,17 @@ public class CalculatorTest {
         assertNotEquals("Square root of positive floating point number ", NaN,calc.sqrt(1587.4333312),DELTA);
         assertNotEquals("Square root of negative floating point number ", 62,calc.sqrt(-0.00001578),DELTA);
     }
+
+    @Test
+    public void trueFactorial() {
+        assertEquals("Square root of positive integer ",3628800,calc.factorial(10),DELTA);
+        assertEquals("Square root of negative integer ", -1,calc.factorial(-200),DELTA);
+    }
+
+    @Test
+    public void falseFactorial() {
+        assertNotEquals("Square root of positive integer ",29,calc.factorial(5),DELTA);
+        assertNotEquals("Square root of negative integer ", 120,calc.factorial(-11),DELTA);
+    }
+
 }

@@ -15,11 +15,19 @@ public class Calculator {
     {
         logger.info("[FACTORIAL] - " + number);
         int result = 1;
-        for(int i=1;i<=number;i++)
+        if(number>=0)
         {
-            result = result*i;
+            for(int i=1;i<=number;i++)
+            {
+                result = result*i;
+            }
+            logger.info("[FACTORIAL - RESULT] - " + result);
         }
-        logger.info("[FACTORIAL - RESULT] - " + result);
+        else
+        {
+            result = -1;
+            logger.info("[FACTORIAL - RESULT] - " + result);
+        }
         return result;
     }
 
