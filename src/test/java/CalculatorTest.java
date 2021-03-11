@@ -1,11 +1,26 @@
-import org.junit.jupiter.api.Assertions;
+import org.junit.Test;
 
-class CalculatorTest {
+import static java.lang.Double.NaN;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 
-    @org.junit.jupiter.api.Test
+public class CalculatorTest {
+    private static final double DELTA = 1e-7;
+    Calculator calc = new Calculator();
 
-    public void trueFactorial() {
-        Calculator c = new Calculator();
-        Assertions.assertEquals(c.factorial(5), 120);
+    @Test
+    public void trueSquareRoot() {
+        assertEquals("Square root of positive integer ",2,calc.sqrt(4),DELTA);
+        assertEquals("Square root of negative integer ", NaN,calc.sqrt(-2),DELTA);
+        assertEquals("Square root of positive floating point number ", 5.588380803059147,calc.sqrt(31.23),DELTA);
+        assertEquals("Square root of negative floating point number ", NaN,calc.sqrt(-7.891),DELTA);
+    }
+
+    @Test
+    public void falseSquareRoot() {
+        assertNotEquals("Square root of positive integer ",24,calc.sqrt(25),DELTA);
+        assertNotEquals("Square root of negative integer ", 3.7,calc.sqrt(-300),DELTA);
+        assertNotEquals("Square root of positive floating point number ", NaN,calc.sqrt(1587.4333312),DELTA);
+        assertNotEquals("Square root of negative floating point number ", 62,calc.sqrt(-0.00001578),DELTA);
     }
 }
