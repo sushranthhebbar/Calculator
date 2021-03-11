@@ -1,0 +1,43 @@
+2021-03-11 21:28:41.074 [main] INFO  Calculator - [SQUARE ROOT] - 16.0
+2021-03-11 21:28:41.077 [main] INFO  Calculator - [SQUARE ROOT - RESULT] - 4.0
+2021-03-11 21:29:56.821 [main] INFO  Calculator - [FACTORIAL] - 12
+2021-03-11 21:29:56.824 [main] INFO  Calculator - [FACTORIAL - RESULT] - 479001600
+2021-03-11 21:30:05.169 [main] INFO  Calculator - [SQUARE ROOT] - 100.0
+2021-03-11 21:30:05.169 [main] INFO  Calculator - [SQUARE ROOT - RESULT] - 10.0
+2021-03-11 21:30:30.920 [main] INFO  Calculator - [SQUARE ROOT] - 8.0
+2021-03-11 21:30:30.922 [main] INFO  Calculator - [SQUARE ROOT - RESULT] - 2.8284271247461903
+2021-03-11 21:30:45.603 [main] ERROR Calculator - Invalid input. The input is not a number
+2021-03-11 21:32:04.527 [main] INFO  Calculator - [LOGARITHM] - 2.0
+2021-03-11 21:32:04.536 [main] INFO  Calculator - [LOGARITHM] - 0.6931471805599453
+2021-03-11 21:32:16.085 [main] ERROR Calculator - Invalid input. The input is not a number
+2021-03-11 21:32:43.214 [main] ERROR Calculator - Invalid input. The input is not a number
+2021-03-11 21:33:29.030 [main] INFO  Calculator - [SQUARE ROOT] - 4.0
+2021-03-11 21:33:29.032 [main] INFO  Calculator - [SQUARE ROOT - RESULT] - 2.0
+2021-03-11 21:33:36.947 [main] INFO  Calculator - [SQUARE ROOT] - 4.0
+2021-03-11 21:33:36.950 [main] INFO  Calculator - [SQUARE ROOT - RESULT] - 2.0
+2021-03-11 21:33:39.227 [main] INFO  Calculator - [SQUARE ROOT] - 77.0
+2021-03-11 21:33:39.228 [main] INFO  Calculator - [SQUARE ROOT - RESULT] - 8.774964387392123
+2021-03-11 21:33:45.284 [main] ERROR Calculator - Invalid input. The input is not a number
+2021-03-11 21:35:38.676 [main] ERROR Calculator - Invalid input. The input is not a number
+2021-03-11 21:37:53.170 [main] INFO  Calculator - [SQUARE ROOT] - 4.3
+2021-03-11 21:37:53.172 [main] INFO  Calculator - [SQUARE ROOT - RESULT] - 2.073644135332772
+2021-03-11 21:38:21.027 [main] INFO  Calculator - [SQUARE ROOT] - -2.0
+2021-03-11 21:38:21.028 [main] INFO  Calculator - [SQUARE ROOT - RESULT] - NaN
+2021-03-11 21:38:40.921 [main] INFO  Calculator - [FACTORIAL] - 0
+2021-03-11 21:38:40.922 [main] INFO  Calculator - [FACTORIAL - RESULT] - 1
+2021-03-11 21:38:47.366 [main] INFO  Calculator - [FACTORIAL] - 5
+2021-03-11 21:38:47.367 [main] INFO  Calculator - [FACTORIAL - RESULT] - 120
+2021-03-11 21:38:59.103 [main] INFO  Calculator - [LOGARITHM] - 0.5378
+2021-03-11 21:38:59.103 [main] INFO  Calculator - [LOGARITHM] - -0.6202685351473729
+2021-03-11 21:39:07.236 [main] INFO  Calculator - [LOGARITHM] - 8.5167
+2021-03-11 21:39:07.236 [main] INFO  Calculator - [LOGARITHM] - 2.1420289418682694
+2021-03-11 21:39:17.205 [main] INFO  Calculator - [LOGARITHM] - 2.7182
+2021-03-11 21:39:17.206 [main] INFO  Calculator - [LOGARITHM] - 0.9999698965391098
+2021-03-11 21:39:28.046 [main] INFO  Calculator - [POWER] - 2.0,3.0
+2021-03-11 21:39:28.047 [main] INFO  Calculator - [POWER - RESULT] - 8.0
+2021-03-11 21:39:46.330 [main] INFO  Calculator - [POWER] - 4.0,0.5
+2021-03-11 21:39:46.331 [main] INFO  Calculator - [POWER - RESULT] - 2.0
+2021-03-11 21:39:58.906 [main] INFO  Calculator - [POWER] - 0.5,2.0
+2021-03-11 21:39:58.906 [main] INFO  Calculator - [POWER - RESULT] - 0.25
+2021-03-11 21:40:31.141 [main] INFO  Calculator - [POWER] - 0.25,0.5
+2021-03-11 21:40:31.142 [main] INFO  Calculator - [POWER - RESULT] - 0.5
