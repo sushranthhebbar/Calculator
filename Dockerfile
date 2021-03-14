@@ -7,4 +7,4 @@ COPY pom.xml /usr/local/service/pom.xml
 WORKDIR /usr/local/service
 RUN mvn package
 #CMD ["java","-cp","target/Calculator-1.0-SNAPSHOT.jar", "Calculator"]
-CMD java -cp target/Calculator-1.0-SNAPSHOT.jar Calculator
+CMD java -cp target/Calculator-1.0-SNAPSHOT-jar-with-dependencies.jar Calculator

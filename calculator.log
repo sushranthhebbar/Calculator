@@ -297,3 +297,11 @@
 2021-03-11 22:46:22.588 [main] INFO  Calculator - [POWER - RESULT] - 0.0772628412137455
 2021-03-11 22:46:22.588 [main] INFO  Calculator - [POWER] - -1.0,-2.0
 2021-03-11 22:46:22.588 [main] INFO  Calculator - [POWER - RESULT] - 1.0
+2021-03-13 16:52:10.106 [main] INFO  Calculator - [SQUARE ROOT] - 9.0
+2021-03-13 16:52:10.108 [main] INFO  Calculator - [SQUARE ROOT - RESULT] - 3.0
+2021-03-13 16:52:32.514 [main] INFO  Calculator - [FACTORIAL] - 10
+2021-03-13 16:52:32.515 [main] INFO  Calculator - [FACTORIAL - RESULT] - 3628800
+2021-03-13 16:52:49.998 [main] INFO  Calculator - [LOGARITHM] - 2.0
+2021-03-13 16:52:49.999 [main] INFO  Calculator - [LOGARITHM] - 0.6931471805599453
+2021-03-13 16:53:01.494 [main] INFO  Calculator - [POWER] - 5.0,2.0
+2021-03-13 16:53:01.494 [main] INFO  Calculator - [POWER - RESULT] - 25.0
